@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/materialize-rtl.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-<body dir="rtl">
-
-    <div class="main_container">
-        <div class="row">
-            <div class="col s12 m4 purple darken-3 valign-wrapper hide-on-med-and-down hoverable">
-                سلام دوستان
-            </div>
-            <div class="col s12 m4 red">
-                سلام دوستان
-            </div>
-            <div class="col s12 m4 orange">
-                سلام دوستان
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/materialize.min.css" />
+    <link rel="stylesheet" href="assets/css/materialize-rtl.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/sideBack.jpg"
+      type="image/x-icon"
+    />
+    <title>مدریت ساختمان</title>
+  </head>
+  <body dir="rtl">
+    <!-- header start ---------------------------------------------------------- -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="fas fa-bars"></i>
+        </a>
+        <ul class="navbar-ul right hide-on-med-and-down main-ul-navbar">
+          <li class="tab"><a href="#content1">داشبورد</a></li>
+          <li class="tab"><a href="#content2">مدریت مخارج</a></li>
+          <li class="tab"><a href="#content3">افزودن هزینه</a></li>
+          <li class="tab"><a href="#content4">مدریت همشایگان</a></li>
+          <li class="tab"><a href="#content5">پیام ها</a></li>
+        </ul>
+      </nav>
     </div>
 
+    <ul class="sidenav main-ul-navbar" id="mobile-demo">
+      <li class="tab"><a href="#content1">داشبورد</a></li>
+      <li class="tab"><a href="#content2">مدریت مخارج</a></li>
+      <li class="tab"><a href="#content3">افزودن هزینه</a></li>
+      <li class="tab"><a href="#content4">مدریت همشایگان</a></li>
+      <li class="tab"><a href="#content5">پیام ها</a></li>
+    </ul>
+    <!-- header end ---------------------------------------------------------- -->
 
-    
+    <!-- <section class="main-content red"> -->
+    <div id="content1" class="item-content red"></div>
+    <div id="content2" class="item-content orange darken-3"></div>
+    <div id="content3" class="item-content green"></div>
+    <div id="content4" class="item-content purple"></div>
+    <div id="content5" class="item-content blue"></div>
+    <!-- </section> -->
+
+    <div class="fixed-action-btn toolbar">
+      <a class="btn-floating btn-large cyan darken-3">
+        <i class="fas fa-bars"></i>
+      </a>
+      <ul>
+        <li>
+          <a class="btn-floating"><i class="fas fa-user-plus"></i></a>
+        </li>
+        <li>
+          <a class="btn-floating"><i class="fas fa-users"></i></a>
+        </li>
+        <li>
+          <a class="btn-floating"><i class="fas fa-dollar-sign"></i></a>
+        </li>
+        <li>
+          <a class="btn-floating"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/app.js"></script>
-</body>
+  </body>
 </html>
