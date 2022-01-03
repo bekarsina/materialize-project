@@ -132,6 +132,44 @@ nav .sidenav-trigger {
   padding-right: 4rem !important;
 }
 
+.main_table{
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1.5rem;
+  padding: 1rem !important;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 5px #000;
+  overflow: auto;
+  max-height: calc(100vh - 64px-1.1rem);
+}
+.main_table thead{
+  background: #006064;
+  color: white;
+  border-radius: 0.5rem;
+}
+.main_table tr{
+  padding: 0 !important;
+}
+.main_table table.highlight > tbody > tr:hover{
+background: #0060643a;
+}
+
+#content5 .collection .collection-item.active{
+  background-color: white !important;
+  color: unset !important;
+}
+
+#content5 .collapsible-header{
+  background-color: unset !important;
+  border-bottom: unset !important;
+}
+
+#content5 .main_list_messages{
+  border-radius: 10px !important;
+  max-height: calc(100vh - 1.1rem - 68px);
+  overflow-y: auto !important;
+}
+
+
 @media (min-width: 601px) {
   .px_md_5 {
     padding-left: 5rem !important;
@@ -139,9 +177,12 @@ nav .sidenav-trigger {
   }
 }
 
-@media (max-width: 601px) {
+@media (max-width: 993px) {
   .input-field {
     padding: 0 !important;
+  }
+  .main_table th, td{
+    pad: 0.8rem 0.3rem !important;
   }
 }
 
@@ -150,4 +191,18 @@ nav .sidenav-trigger {
     right: unset !important;
     left: 0.5rem !important;
   }
+}
+
+/* scrolbar */
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
 }

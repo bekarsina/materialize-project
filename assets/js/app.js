@@ -30,6 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 100);
     });
   }
+
+  var autoCompleteElem = document.querySelectorAll('.autocomplete');
+  M.Autocomplete.init(autoCompleteElem , {
+      data:{
+          "شارژ": null,
+          "آب مشاع": null,
+          "آب": null,
+          "برق مشاع": null,
+          "برق": null,
+          "گاز": null,  
+          "برسی ماهانه آسانسور": null,
+          "نظافت ساختمان": null,
+      }
+  })
+
+  var collapsibleElem = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsibleElem , {})
+
   animateProgress("payProgressPath", "payProgressText", 50);
   animateProgress("floorProgressPath", "floorProgressText", 90);
   function animateProgress(PathDomId, textDomId, percent) {
