@@ -13,72 +13,304 @@
       href="./assets/images/sideBack.jpg"
       type="image/x-icon"
     />
-    <title>مدریت ساختمان</title>
+    <title>مدیریت ساختمان</title>
   </head>
   <body dir="rtl">
-    <!-- header start ---------------------------------------------------------- -->
+    <!-- header start --------------- -->
     <div class="navbar-fixed">
-      <nav class="indigo darken-4">
+      <nav class="cyan lighten-2">
         <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-          <i class="fas fa-bars"></i>
-        </a>
-        <ul class="navbar-ul right hide-on-med-and-down main-ul-navbar">
-            <li class="tab"><a class="menu-link-desktop" href="#content1">داشبورد</a></li>
-            <li class="tab"><a class="menu-link-desktop" href="#content2">افزودن هزینه</a></li>
-            <li class="tab"><a class="menu-link-desktop" href="#content3">مدریت همسایگان</a></li>
-            <li class="tab"><a class="menu-link-desktop" href="#content4">مدریت مخارج</a></li>
-            <li class="tab"><a class="menu-link-desktop" href="#content5">پیام ها</a></li>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="fas fa-bars"></i
+        ></a>
+        <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
+          <li class="tab">
+            <a class="menu_links_desktop" href="#content1">داشبورد</a>
+          </li>
+          <li class="tab">
+            <a class="menu_links_desktop active" href="#content2"
+              >افزودن همسایه</a
+            >
+          </li>
+          <li class="tab">
+            <a class="menu_links_desktop" href="#content4">مدیریت همسایگان</a>
+          </li>
+          <li class="tab">
+            <a class="menu_links_desktop" href="#content3">افزودن هزینه</a>
+          </li>
+          <li class="tab">
+            <a class="menu_links_desktop" href="#content5">پیام ها</a>
+          </li>
         </ul>
       </nav>
     </div>
-
-    <ul class="sidenav main-ul-navbar" id="mobile-demo">
-        <li class="tab"><a href="#content1">داشبورد</a></li>
-        <li class="tab"><a href="#content2">افزودن هزینه</a></li>
-        <li class="tab"><a href="#content3">مدریت همسایگان</a></li>
-        <li class="tab"><a href="#content4">مدریت مخارج</a></li>
-        <li class="tab"><a href="#content5">پیام ها</a></li>
+    <ul class="sidenav main_ul_navbar" id="mobile-demo">
+      <li class="tab">
+        <a class="menu_item_list" href="#content1">داشبورد</a>
+      </li>
+      <li class="tab">
+        <a class="menu_item_list" href="#content2">افزودن همسایه</a>
+      </li>
+      <li class="tab">
+        <a class="menu_item_list" href="#content4">مدیریت همسایگان</a>
+      </li>
+      <li class="tab">
+        <a class="menu_item_list" href="#content3">افزودن هزینه</a>
+      </li>
+      <li class="tab">
+        <a class="menu_item_list" href="#content5">پیام ها</a>
+      </li>
     </ul>
-    <!-- header end ---------------------------------------------------------- -->
+    <!-- header end --------------- -->
 
-    <!-- <section class="main-content red"> -->
-    <div id="content1" class="item-content red"></div>
-    <div id="content2" class="item-content orange darken-3"></div>
-    <div id="content3" class="item-content green"></div>
-    <div id="content4" class="item-content purple"></div>
-    <div id="content5" class="item-content blue"></div>
-    <!-- </section> -->
-
-    <!--  -->
+    <!-- quick access start -->
     <div class="fixed-action-btn toolbar hide-on-med-and-up">
-      <a class="btn-floating btn-large cyan darken-3 hamber-menu">
-        <i class="fas fa-bars"></i>
+      <a class="btn-floating btn-large cyan darken-3 floating_quick_access">
+        <i class="large fas fa-bars"></i>
       </a>
       <ul>
-        <li>
-          <a href="#content2" class="btn-floating"
-            ><i class="fas fa-plus"></i
-          ></a>
+        <li class="quick_access_items">
+          <a class="btn-floating"><i class="fas fa-user-plus"></i></a>
         </li>
-        <li>
-          <a href="#content3" class="btn-floating"
-            ><i class="fas fa-users"></i
-          ></a>
+        <li class="quick_access_items">
+          <a class="btn-floating"><i class="fas fa-users"></i></a>
         </li>
-        <li>
-          <a href="#content4" class="btn-floating"
-            ><i class="fas fa-dollar-sign"></i
-          ></a>
+        <li class="quick_access_items">
+          <a class="btn-floating"><i class="fas fa-money-bill-wave"></i></a>
         </li>
-        <li>
-          <a href="#content5" class="btn-floating"
-            ><i class="fas fa-home"></i
-          ></a>
+        <li class="quick_access_items">
+          <a class="btn-floating"><i class="fas fa-envelope"></i></a>
         </li>
       </ul>
     </div>
-    <!--  -->
+    <!-- quick access end -->
+
+    <!-- dashboard --------------- -->
+    <div id="content1" class="item_content">
+      <div class="row">
+        <div class="col s12 m6 l4 xl3.5 progressbar_grid px_4 px_md_5">
+          <span class="white-text">
+            <svg
+              viewbox="0 0 100 100"
+              style="filter: drop-shadow(0 0 5px black)"
+            >
+              <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
+              <path
+                id="payProgressPath"
+                fill="none"
+                stroke-linecap="round"
+                stroke-width="6"
+                stroke="#006064"
+                stroke-dasharray="126.5 , 126.5"
+                d="M50 10
+                      a 40 40 0 0 1 0 80
+                      a 40 40 0 0 1 0 -80"
+              />
+              <text
+                id="payProgressText"
+                x="50"
+                y="35"
+                fill="#006064"
+                text-anchor="middle"
+                dy="7"
+                font-size="20"
+              >
+                50%
+              </text>
+              <text
+                x="50"
+                y="55"
+                fill="#006064"
+                text-anchor="middle"
+                dy="7"
+                font-size="10"
+              >
+                پرداخت ها
+              </text>
+            </svg>
+          </span>
+        </div>
+
+        <div class="col s12 m6 l4 xl3.5 progressbar_grid px_4 px_md_5">
+          <span class="white-text">
+            <svg
+              viewbox="0 0 100 100"
+              style="filter: drop-shadow(0 0 5px black)"
+            >
+              <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
+              <path
+                id="floorProgressPath"
+                fill="none"
+                stroke-linecap="round"
+                stroke-width="6"
+                stroke="#006064"
+                stroke-dasharray="126.5 , 126.5"
+                d="M50 10
+                      a 40 40 0 0 1 0 80
+                      a 40 40 0 0 1 0 -80"
+              />
+              <text
+                id="floorProgressText"
+                x="50"
+                y="35"
+                fill="#006064"
+                text-anchor="middle"
+                dy="7"
+                font-size="20"
+              >
+                50%
+              </text>
+              <text
+                x="50"
+                y="55"
+                fill="#006064"
+                text-anchor="middle"
+                dy="7"
+                font-size="10"
+              >
+                واحد های پر
+              </text>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- dashboard --------------- -->
+
+    <!-- add person ---------------- -->
+    <div id="content2" class="item_content active">
+      <div class="row p_1">
+        <form class="main_form col s12 m6 l5" method="post">
+          <h5 class="center-align cyan-text text-darken-4">ثبت همسایه جدید</h5>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate" required />
+              <label class="teal-text text-darken-4" for="name"
+                >نام و نام خانوادگی</label
+              >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="phone" type="text" class="validate" required />
+              <label class="teal-text text-darken-4" for="phone">تماس</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="count" type="number" class="validate" required />
+              <label class="teal-text text-darken-4" for="count">تعداد</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <select>
+                <option value="">انتخاب کنید...</option>
+                <option value="1">طبقه 1</option>
+                <option value="2">طبقه 2</option>
+                <option value="3">طبقه 3</option>
+                <option value="4">طبقه 4</option>
+              </select>
+              <label class="teal-text text-darken-4">طبقه</label>
+            </div>
+            <div class="input-field col s6">
+              <select>
+                <option value="">انتخاب کنید...</option>
+                <option value="1">واحد 1</option>
+                <option value="2">واحد 2</option>
+                <option value="3">واحد 3</option>
+                <option value="4">واحد 4</option>
+              </select>
+              <label class="teal-text text-darken-4">واحد</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>ساکن</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field col s4">
+              <p>
+                <label>
+                  <input name="group1" type="radio" checked />
+                  <span>مالک</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field col s4">
+              <p>
+                <label>
+                  <input name="group1" type="radio" checked />
+                  <span>مستاجر</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <label class="teal-text text-darken-4">روز</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="1">فروردین</option>
+                <option value="2">اردیبهشت</option>
+                <option value="3">خرداد</option>
+                <option value="4">تیر</option>
+                <option value="5">مرداد</option>
+                <option value="6">شهریور</option>
+                <option value="7">مهر</option>
+              </select>
+              <label class="teal-text text-darken-4">ماه</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="1394">1394</option>
+                <option value="1395">1395</option>
+                <option value="1396">1396</option>
+                <option value="1397">1397</option>
+                <option value="1398">1398</option>
+                <option value="1399">1399</option>
+                <option value="1400">1400</option>
+              </select>
+              <label class="teal-text text-darken-4">سال</label>
+            </div>
+          </div>
+
+          <div class="center-align">
+            <button
+              class="btn waves-effect waves-light teal darken-4"
+              type="button"
+              name="action"
+            >
+              ثبت
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- add person ---------------- -->
+
+    <div id="content3" class="item_content"></div>
+    <div id="content4" class="item_content"></div>
+    <div id="content5" class="item_content"></div>
 
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/app.js"></script>
